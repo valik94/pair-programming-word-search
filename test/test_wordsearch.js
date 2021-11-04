@@ -35,4 +35,9 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+  it("should return false if the matrix is an empty array", function() {
+    const result = wordSearch([], 'FRANK')
+
+    assert.isFalse(result);
+  });
 });
